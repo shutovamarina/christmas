@@ -5,20 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristmas</title>
+    <link rel="icon" href="data:,">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+    <audio src="song.mp3" loop="loop" autoplay="allowed" id="myAudio"></audio>
     <div class="heading">
         <h1>Santa is coming to town!!!</h1>
+    </div>
+
+    <button id="myButton"><img src="play.png" alt="play button"></button>
+    <div class="container">
+        <div class="christmas">
+            <div class="block">
+                <h4 class="days"></h4>
+                <h3>DAYS</h3>
+            </div>
+        </div>
+        <div class="christmas">
+            <div class="block">
+                <h4 class="hours"></h4>
+                <h3>HOURS</h3>
+            </div>
+        </div>
+        <div class="christmas">
+            <div class="block">
+                <h4 class="minutes"></h4>
+                <h3>MINUTES</h3>
+            </div>
+        </div>
+        <div class="christmas">
+            <div class="block">
+                <h4 class="seconds"></h4>
+                <h3>SECOND</h3>
+            </div>
+        </div>
     </div>
     <div class="music">
         <audio src=""></audio>
     </div>
+
+
+    <!--   <br><br><br>
+    <div style="font-size:18px; border:solid 1px #ececec; background:#EEEFEF; color:#222; text-align:center; margin:20 auto; padding:10px; margin-bottom:10px; -moz-border-radius: 1px; -webkit-border-radius: 1px; -khtml-border-radius:1px; border-radius: 1px;">
+        <script LANGUAGE="javascript">
+            document.write('<span id="ny_date">До Рождества осталось...</span>')
+
+            function ojidanieNG() {
+                var today = new Date();
+
+                var BigDay = new Date("December 25, 2024");
+                var timeLeft = (BigDay.getTime() - today.getTime());
+
+                var e_daysLeft = timeLeft / 86400000;
+                var daysLeft = Math.floor(e_daysLeft);
+
+                var e_hrsLeft = (e_daysLeft - daysLeft) * 24;
+                var hrsLeft = Math.floor(e_hrsLeft);
+
+                var e_minsLeft = (e_hrsLeft - hrsLeft) * 60;
+                var minsLeft = Math.floor(e_minsLeft);
+
+                var seksLeft = Math.floor((e_minsLeft - minsLeft) * 60);
+
+                if (BigDay.getTime() > today.getTime())
+                    document.getElementById("ny_date").innerHTML = '<font color="#c00"><b>До Нового года осталось</b></font>: <b>' + daysLeft + '</b> дней <b>' + hrsLeft + '</b> час. <b>' + minsLeft + '</b> мин. <b>' + seksLeft + '</b> сек.'
+                else
+                    document.getElementById("ny_date").innerHTML = '<b>Поздравляем с <font color=red>Новым годом!</font>!!!</b>'
+            }
+            setInterval("ojidanieNG()", 50)
+        </script>
+    </div> -->
     <script src="script.js"></script>
 </body>
 

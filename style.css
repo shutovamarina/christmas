@@ -1,5 +1,8 @@
 body {
     background-image: url(https://images.unsplash.com/photo-1603793303277-ed67787545e5?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2FudGF8ZW58MHx8MHx8fDA%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #d12d2e;
 }
 
 .heading {
@@ -7,10 +10,96 @@ body {
     justify-content: center;
 }
 
+button {
+    margin-left: 120px;
+    border: none;
+}
+
 h1 {
     font-size: 60px;
-    background-color: white;
-    border: 2px solid black;
-    padding: 10px;
+    background-color: rgba(251, 248, 249, 0.9);
+    border: 3px solid black;
+    padding: 20px;
     font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.christmas {
+    background-color: rgba(251, 248, 249, 0.82);
+    width: 200px;
+    height: 300px;
+    margin-top: 60px;
+    border: 3px solid black;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.red {
+    font-family: "Staatliches", sans-serif;
+    border: none;
+    font-size: 60px;
+    color: red;
+}
+
+@media all and (max-width: 800px) {
+    h1,
+    .red {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+        font-size: 30px;
+    }
+    .christmas {
+        width: 150px;
+        height: 250px;
+        margin-top: 60px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    h1,
+    .red {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+        font-size: 20px;
+    }
+    .christmas {
+        width: 100px;
+        height: 200px;
+        margin-top: 60px;
+    }
 }
