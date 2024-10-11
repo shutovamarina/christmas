@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #d12d2e;
+    overflow: hidden;
 }
 
 .heading {
